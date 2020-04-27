@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>maze</title>
+    <style>
+        #playground {
+            width: 400px;
+            height: 400px;
+            background-color: aquamarine;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #man {
+            width: 30px;
+            height: 30px;
+            background-color: brown;
+            top: 10px;
+            left: 10px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="playground">
+        <div>
+            <h1>
+                MAZE
+            </h1>
+            <form action="maze/play" method="POST">
+                <!--action: where to form -->
+                <!--method: how to submmit-->
+                <div class="name">
+                    <label for="name">Username</label>
+                    <input type="name" name="name" id="name" placeholder="Please enter your name">
+                </div>
+
+                <div class="version">
+                    <label for="version">version</label>
+                    <input type="version" name="version" id="version" placeholder="Input 0 for hard or 1 for easy">
+                </div>
+                <button>submit</button>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
